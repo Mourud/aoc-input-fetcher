@@ -62,7 +62,7 @@ Here’s a quick demo of how to use the package:
 
 from aoc_input_fetcher import fetch_input
 ```python
-from input_fetcher import fetch_input
+from aoc_input_fetcher import fetch_input
 
 def main():
     input = fetch_input(__file__)
