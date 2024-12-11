@@ -38,14 +38,14 @@ AOC_COOKIE=<your_session_cookie>
 The package expects the following file structure for your Advent of Code project:
 
 
-
+```
 aoc/2024/
 ├── day1.py
 ├── day5.py
 ├── inputs/
 │   ├── day1.txt
 │   └── day5.txt
-
+```
 ### Fetch Input
 
 Example of fetching input for Day 1:
