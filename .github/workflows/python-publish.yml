@@ -25,7 +25,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-
+      - name: Set dynamic version
+        run: |
+          VERSION=${{ github.event.release.tag_name }}
+          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          sed -i "s/__VERSION__/${VERSION}/g" setup.py
       - name: Build release distributions
         run: |
           # NOTE: put your own distribution build steps here.
