@@ -1,4 +1,4 @@
-# Advebt of Code Input Fetcher
+# Advent of Code Input Fetcher
 
 `aoc_input_fetcher` is a Python package that automates fetching input files for [Advent of Code](https://adventofcode.com) challenges, assuming a specific file structure for your project.
 
