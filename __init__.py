@@ -1,1 +1,0 @@
-from input_fetcher import fetch_input
