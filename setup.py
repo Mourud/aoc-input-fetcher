@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="aoc_input_fetcher",
-    version="0.1.0",
+    version=__VERSION__,
     description="A useful tool for getting the input automatically for Advent of Code, given you follow the file structure",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
