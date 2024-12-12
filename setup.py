@@ -1,8 +1,14 @@
+import subprocess
 from setuptools import setup, find_packages
 
+cf_remote_version = (
+    subprocess.run(["git", "describe", "--tags"], stdout=subprocess.PIPE)
+    .stdout.decode("utf-8")
+    .strip()
+)
 setup(
     name="aoc_input_fetcher",
-    version=__VERSION__,
+    version=cf_remote_version,
     description="A useful tool for getting the input automatically for Advent of Code, given you follow the file structure",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
